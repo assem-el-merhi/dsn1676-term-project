@@ -1,0 +1,218 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: grey;
+
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+.section-top {
+background-image: url("../images/lambo-graphic.svg");
+background-position: center top;
+background-size: 1021px 235px;
+height: 235px;
+background-color: black;
+overflow: hidden;
+background-repeat: no-repeat;
+}
+
+.flip-container {
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -o-perspective: 1000;
+  perspective: 1000;
+  border: 1px solid yellow;
+}
+
+	.flip-container:hover .flipper,  
+  .flip-container.hover .flipper {
+		-webkit-transform: rotateY(180deg);
+		-moz-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 300px;
+	height: 180px;
+    position: absolute;
+    top: 45px;
+	left: calc(50% - 160px);
+}
+
+.flipper {
+	-webkit-transition: 0.6s;
+	-webkit-transform-style: preserve-3d;
+    -moz-transition: 0.6s;
+	-moz-transform-style: preserve-3d;
+    -o-transition: 0.6s;
+	-o-transform-style: preserve-3d; 
+    transition: 0.6s;
+	transform-style: preserve-3d;
+    position: relative;
+}
+
+.front, .back {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.front {
+    background-color: black;
+	z-index: 2;
+}
+
+.back {
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+    background: #efefef;
+}
+
+.front .name {
+	font-size: 3em;
+	display: inline-block;
+	background: rgba(33, 33, 33, 0.9);
+	color: black;
+	font-family: Courier;
+	padding: 5px 10px;
+	border-radius: 5px;
+	bottom: 60px;
+	left: 10%;
+	position: absolute;
+    background-color: yellow;
+   
+    -webkit-transform: rotate(-20deg);
+	-moz-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+	transform: rotate(-20deg);
+}
+
+.back-logo {
+	position: absolute;
+	top: 5px;
+	left: 123px;
+	width: 50px;
+	height: 110px;
+    background: url(../images/acme-logo.svg)0 0 no-repeat;
+}
+
+
+.back-title {
+	font-weight: bold;
+	color: #00304a;
+	position: absolute;
+	top: 70px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	text-shadow: 0.1em 0.1em 0.05em #acd7e5;
+	font-family: Courier;
+	font-size: 1em;
+}
+
+.back p {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	padding: 0 20px;
+    font-family: arial;
+    line-height: 1em;
+}
+
+
+.logo-wrap {
+    text-align: center;
+    width: 3em;
+    position: absolute;
+    left: 18.5em;
+}
+
+.app-rotate {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: em;
+    width: 35px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+    position: relative;
+    opacity: 0.6;
+    transform: rotate(30deg);
+    transition: all 1000ms linear;
+}
+
+.app-rotate:target {
+    opacity: ;
+    transform: rotate(5deg);
+}
+
+
+
+
+.wheel {
+    position: absolute;
+    -webkit-animation: wheel-rotate 3s ease-in-out infinite alternate;
+    animation: wheel-rotate 3s ease-in-out infinite alternate;
+    left: calc(50% - 365px);
+    top: 120px;
+    width: 9em;
+    
+}
+
+@-webkit-keyframes wheel-rotate { 
+25% { -webkit-transform: rotate(0deg);}
+50% { -webkit-transform: rotate(360deg);}
+75% { -webkit-transform: rotate(720deg);}
+100% { -webkit-transform: rotate(1440deg);}
+}
+
+@keyframes wheel-rotate { 
+25% { -webkit-transform: rotate(0deg);}
+50% { -webkit-transform: rotate(360deg);}
+75% { -webkit-transform: rotate(720deg);}
+100% { -webkit-transform: rotate(1440deg);}
+}
+
+
+
+.wheel-2 {
+    position: absolute;
+    -webkit-animation: wheel-2-rotate 3s ease-in-out infinite alternate;
+    animation: wheel-2-rotate 3s ease-in-out infinite alternate;
+    left: calc(50% + 250px);
+    top: 115px;
+    width: 9em;
+    
+}
+
+@-webkit-keyframes wheel-2-rotate { 
+25% { -webkit-transform: rotate(0deg);}
+50% { -webkit-transform: rotate(360deg);}
+75% { -webkit-transform: rotate(720deg);}
+100% { -webkit-transform: rotate(1440deg);}
+}
+
+@keyframes wheel-2-rotate { 
+25% { -webkit-transform: rotate(0deg);}
+50% { -webkit-transform: rotate(360deg);}
+75% { -webkit-transform: rotate(720deg);}
+100% { -webkit-transform: rotate(1440deg);}
+}
