@@ -20,6 +20,40 @@ html {
     box-sizing: inherit;
 }
 
+.body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.header{
+    display: block;
+    width: 100%;
+    background-color: black;
+    background-size: 100%;
+    background-repeat: repeat;
+    color: white;
+    position:relative;
+}
+
+.nav-btn,
+.nav-btn:link,
+.nav-btn:visited {
+height: 56px;
+    width: 46px;
+overflow: hidden;
+    position: absolute;
+    top: 54px;
+    right: 2%;
+background: transparent url("../images/icon-nav.svg") no-repeat 0 0;
+text-indent: 100%;
+    background-color: orange;
+}
+
+
+
+
+
 
 
 
