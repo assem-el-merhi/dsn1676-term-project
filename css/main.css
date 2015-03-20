@@ -28,7 +28,8 @@ html {
 .cam {
 position: absolute;
 left: 20px;
-height:70%;
+height:50%;
+top: 1em;
 margin: .5em 0;
     
 }
@@ -93,13 +94,17 @@ margin: .5em 0;
     width: 46px;
 	overflow: hidden;
     position: absolute;
-    top: 54px;
+    top: 120px;
     right: 2%;
 	background: transparent url("../images/icon-nav.svg") no-repeat 0 0;
 	text-indent: 100%;
     background-color: orange;
+    transition: all 1sec linear;
 }
 
+.nav-btn:hover {
+    background-color: black;
+}
 
 .nav-top {
 	max-height: 0; 
@@ -179,16 +184,6 @@ margin: .5em 0;
 }
 
 
-
-.button {
-    line-height: 1em;
-    border-radius: .2em;
-    text-decoration: none;
-    text-align: center;
-    text-transform: capitalize;
-    font-weight: bold;
-    display: inline-block;
-}
 
 
 .nav-top li {
@@ -305,6 +300,60 @@ section{
 .slide-icon:hover{
   position:absolute;
   margin-top:0;
+}
+
+
+
+p {
+    margin: 0.2em 0.2em;
+}
+
+
+.box1 {
+    height: 60px;
+    top: calc(50% - 60px);
+    width: 400px;
+    border: 1px solid black;
+    width: 700px;
+    opacity: 0;
+    transition: all 250ms ease-out;
+    margin: 0;
+    
+}
+
+.box2 {
+    height: 60px;
+    top: calc(50% - 60px);
+    width: 200px;
+    border: 1px solid black;
+    width: 700px;
+    opacity: 0;
+    transition: all 250ms ease-out;
+}
+
+.box3 {
+    height: 60px;
+    top: calc(50% - 60px);
+    width: 300px;
+    border: 1px solid black;
+    width: 700px;
+    opacity: 0;
+    transition: all 250ms ease-out;
+}
+
+
+.js-box-expand1 {
+    opacity: 100;
+}
+
+.js-box-expand2 {
+    opacity: 100;
+    
+}
+
+.js-box-expand3 {
+    opacity: 100;
+    
 }
 
 @media only screen and (max-width: 1300px) {
@@ -444,6 +493,11 @@ section{
 		margin-top: 190px;
 	}	
 }
+
+
+
+
+
 
 
 
