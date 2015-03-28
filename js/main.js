@@ -9,6 +9,10 @@ var $box2 = $('.box2');
 var $btnShowHide3 = $('.btn-show-hide3');
 var $box3 = $('.box3');
 
+var $btnShowHide4 = $('.btn-show-hide4');
+var $box4 = $('.box4');
+
+
 document.querySelector('.nav-btn').addEventListener('click', function (e) {
     e.preventDefault();
     if (navtop.getAttribute('data-state') == 'expanded') {
@@ -33,3 +37,22 @@ $btnShowHide3.on('click', function () {
     $box3.toggleClass('js-box-expand3');
 });
 
+$btnShowHide4.on('click', function () {
+    $box4.toggleClass('js-box-expand3');
+});
+
+
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});

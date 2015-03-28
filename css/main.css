@@ -94,8 +94,8 @@ margin: .5em 0;
     width: 46px;
 	overflow: hidden;
     position: absolute;
-    top: 120px;
-    right: 2%;
+    top: 20px;
+    right: 1.5%;
 	background: transparent url("../images/icon-nav.svg") no-repeat 0 0;
 	text-indent: 100%;
     background-color: orange;
@@ -103,7 +103,7 @@ margin: .5em 0;
 }
 
 .nav-btn:hover {
-    background-color: black;
+    background-color: navajowhite;
 }
 
 .nav-top {
@@ -151,7 +151,7 @@ margin: .5em 0;
     background-position: right;
     background-image: url(../images/snow-pic.jpg);
     width: 100%;
-    height: calc(100vh + 96px); 
+    height: calc(70vh + 96px); 
     overflow: hidden;
     position: relative;
     right: 0;
@@ -236,8 +236,8 @@ text-decoration: none;
 
 
 section{
-		float: left;
-		padding-top: 0px;
+		overflow: hidden;
+		padding-top: 50px;
 		padding-bottom: 100px;
 		width: 100%;
 		padding-left:0;
@@ -306,41 +306,106 @@ section{
 
 p {
     padding: 0.2em 0.2em;
-    font-size: 0.7em;
+
 }
 
 
 .box1 {
-    height: 40px;
-    top: calc(50% - 60px);
-    width: 400px;
-    width: 700px;
+    height: 120px;
+    width: 350px;
     opacity: 0;
     transition: all 250ms ease-out;
-    margin: 0;
+    margin: 0.5em;
     background-color: rgba(266,170,76,0.6);
+    
+    
+}
+
+.btn-show-hide1 {
+    color: white;
+    font-size: 1em;
+    background-color: orange;
+    padding: 1em 3%;
+    border-top-right-radius: 5px 5px;
+    border-bottom-right-radius: 5px 5px;
+    border-top-left-radius: 5px 5px;
+    border-bottom-left-radius: 5px 5px;
+    margin-left: 0.5em;
+   
     
 }
 
 .box2 {
-    height: 40px;
+    height: 120px;
     top: calc(50% - 60px);
-    width: 200px;
-    width: 700px;
+    width: 350px;
     opacity: 0;
+    margin: 0.5em;
     transition: all 250ms ease-out;
     background-color: rgba(266,170,76,0.6);
 }
 
+.btn-show-hide2 {
+    color: white;
+    font-size: 1em;
+    background-color: orange;
+    padding: 1em 3%;
+    border-top-right-radius: 5px 5px;
+    border-bottom-right-radius: 5px 5px;
+    border-top-left-radius: 5px 5px;
+    border-bottom-left-radius: 5px 5px;
+    margin-left: 0.5em;
+    
+}
+
 .box3 {
-    height: 40px;
+    height: 120px;
     top: calc(50% - 60px);
-    width: 300px;
+    width: 350px;
     background-color: rgba(266,170,76,0.6);
-    width: 700px;
     opacity: 0;
     transition: all 250ms ease-out;
+    margin: 0.5em;
 }
+
+.btn-show-hide3 {
+    color: white;
+    font-size: 1em;
+    background-color: orange;
+    padding: 1em 3%;
+    border-top-right-radius: 5px 5px;
+    border-bottom-right-radius: 5px 5px;
+    border-top-left-radius: 5px 5px;
+    border-bottom-left-radius: 5px 5px;
+    margin-left: 0.5em;
+    
+}
+
+
+
+.box4 {
+    height: 120px;
+    top: calc(50% - 60px);
+    width: 350px;
+    background-color: rgba(266,170,76,0.6);
+    opacity: 0;
+    transition: all 250ms ease-out;
+    margin: 0.5em;
+}
+
+.btn-show-hide4 {
+    color: white;
+    font-size: 1em;
+    background-color: orange;
+    padding: 1em 3%;
+    border-top-right-radius: 5px 5px;
+    border-bottom-right-radius: 5px 5px;
+    border-top-left-radius: 5px 5px;
+    border-bottom-left-radius: 5px 5px;
+    margin-left: 0.5em;
+    
+}
+
 
 
 .js-box-expand1 {
@@ -414,7 +479,7 @@ p {
 		width: 300px;
 		height: auto;
 		position: absolute;
-		margin-top: -300px;
+		margin-top: -100px;
 	}	
 	.icons {
 		width: 50%;
@@ -493,6 +558,10 @@ p {
 		margin-left: 0%;
 		margin-top: 190px;
 	}	
+}
+
+.grid {
+    text-align: center
 }
 
 
