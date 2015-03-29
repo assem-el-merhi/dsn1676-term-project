@@ -24,6 +24,9 @@ document.querySelector('.nav-btn').addEventListener('click', function (e) {
   }
 });
 
+
+$('.section').localScroll();
+
 $btnShowHide1.on('click', function () {
     $box1.toggleClass('js-box-expand1');
 });
@@ -42,17 +45,4 @@ $btnShowHide4.on('click', function () {
 });
 
 
-$(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
+$('.navs').localScroll();

@@ -359,7 +359,7 @@ p {
 }
 
 .box3 {
-    height: 120px;
+    height: 150px;
     top: calc(50% - 60px);
     width: 350px;
     background-color: rgba(266,170,76,0.6);
