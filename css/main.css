@@ -122,6 +122,15 @@ margin: .5em 0;
 	max-height: 6em; 
 }
 
+.page {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 1px;
+    margin: -.5em;
+}
+
+
 .nav-top ul { 
 	margin: 0;
     padding: 1.5rem 0;
@@ -151,7 +160,7 @@ margin: .5em 0;
     background-position: right;
     background-image: url(../images/snow-pic.jpg);
     width: 100%;
-    height: calc(70vh + 96px); 
+    height: calc(100vh + 96px); 
     overflow: hidden;
     position: relative;
     right: 0;
@@ -182,9 +191,6 @@ margin: .5em 0;
 	text-decoration: none;
     text-align: center;
 }
-
-
-
 
 .nav-top li {
     display: inline-block;
@@ -406,8 +412,6 @@ p {
     
 }
 
-
-
 .js-box-expand1 {
     opacity: 100;
 }
@@ -562,6 +566,42 @@ p {
 
 .grid {
     text-align: center
+}
+
+
+.camera-top {
+    text-align: center;
+    width: 50px;
+    margin: 0 auto; 
+}
+
+.camera-bottom {
+    text-align: center;
+    width: 50px;
+    margin: 0 auto;   
+}
+
+
+
+.updown {
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.info {
+    background-color: black;
+    height: 400px;
+}
+
+.des {
+    color:#D0D0D0;
+    list-style-type: none;
+}
+
+.des {
+    text-decoration: none;
+    color: whitesmoke;
 }
 
 

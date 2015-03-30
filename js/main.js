@@ -24,9 +24,6 @@ document.querySelector('.nav-btn').addEventListener('click', function (e) {
   }
 });
 
-
-$('.section').localScroll();
-
 $btnShowHide1.on('click', function () {
     $box1.toggleClass('js-box-expand1');
 });
@@ -44,5 +41,7 @@ $btnShowHide4.on('click', function () {
     $box4.toggleClass('js-box-expand3');
 });
 
+$.localScroll({
+  target: '.page'
+});
 
-$('.navs').localScroll();
