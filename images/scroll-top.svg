@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 612 792" enable-background="new 0 0 612 792" xml:space="preserve">
-<circle cx="306" cy="396" r="306"/>
-<polyline fill="none" stroke="#FAAA4E" stroke-width="20" stroke-miterlimit="10" points="67.3,556.2 302.2,208.8 545,556.2 "/>
+	 viewBox="0 0 612 612" enable-background="new 0 0 612 612" xml:space="preserve">
+<circle fill="#FAAA4E" cx="306" cy="306" r="306"/>
+<polyline fill="none" stroke="#000000" stroke-width="20" stroke-miterlimit="10" points="67.3,466.2 302.2,118.8 545,466.2 "/>
 </svg>
