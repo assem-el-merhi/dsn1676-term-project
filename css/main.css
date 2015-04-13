@@ -385,7 +385,7 @@ p {
     background-color: rgba(266,170,76,0.6);
     opacity: 0;
     transition: all 250ms ease-out;
-     margin-left: auto;
+    margin-left: auto;
     margin-right: auto;
 }
 
@@ -623,7 +623,7 @@ p {
 
 .info {
     background-color: black;
-    height: 800px;
+    height: 642px;
 }
 
 .des {
@@ -636,10 +636,43 @@ p {
     color: whitesmoke;
 }
 
-.flasher {
-em;
+.object {
+    text-align: center;
+     height: 400px;
+     margin-left: auto;
+    margin-right: auto;
 }
 
+.st1 {
+    fill: url(#flash_1_);
+}
+
+.st0 {
+   fill:#FFAB4C;
+}
+.st2 {
+    fill:#231F20;
+}
+
+#light {
+    width: 150px;
+}
+#flash {
+    opacity: 0;
+    transition: all 1s linear;
+}
+
+.js-active #flash {
+    opacity: 1;
+}
+
+#lens {
+    transition: all 1s linear;
+}
+
+.js-active #lens {
+    fill: hot pink;
+}
 
 
 

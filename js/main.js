@@ -45,3 +45,16 @@ $.localScroll({
   target: '.page'
 });
 
+var $flash = $('.flash');
+
+$flash.waypoint(function (direction){ // two equals signs = soft compare and three equal signs is hard compare
+  
+  if (direction == 'down')
+    $flash.addClass('js-active');
+} else {
+    $flash.removeClass('js-active');
+}
+ 
+console.log('Here');
+}, {offset: '60%'});
+
