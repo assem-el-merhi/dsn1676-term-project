@@ -623,7 +623,7 @@ p {
 
 .info {
     background-color: black;
-    height: 642px;
+    height: auto;
 }
 
 .des {
@@ -636,7 +636,7 @@ p {
     color: whitesmoke;
 }
 
-.object {
+.Camera {
     text-align: center;
      height: 400px;
      margin-left: auto;
@@ -654,9 +654,6 @@ p {
     fill:#231F20;
 }
 
-#light {
-    width: 150px;
-}
 #flash {
     opacity: 0;
     transition: all 1s linear;
@@ -671,7 +668,7 @@ p {
 }
 
 .js-active #lens {
-    fill: hot pink;
+    fill: orange;
 }
 
 
