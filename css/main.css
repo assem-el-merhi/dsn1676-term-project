@@ -334,6 +334,8 @@ p {
     transition: all 250ms ease-out;
     margin: 0.5em;
     background-color: rgba(266,170,76,0.6);
+    margin-left: auto;
+    margin-right: auto;
     
     
 }
@@ -354,12 +356,13 @@ p {
 
 .box2 {
     height: 120px;
-    top: calc(50% - 60px);
     width: 350px;
     opacity: 0;
     margin: 0.5em;
     transition: all 250ms ease-out;
     background-color: rgba(266,170,76,0.6);
+     margin-left: auto;
+    margin-right: auto;
 }
 
 .btn-show-hide2 {
@@ -382,7 +385,8 @@ p {
     background-color: rgba(266,170,76,0.6);
     opacity: 0;
     transition: all 250ms ease-out;
-    margin: 0.5em;
+     margin-left: auto;
+    margin-right: auto;
 }
 
 .btn-show-hide3 {
@@ -407,7 +411,9 @@ p {
     background-color: rgba(266,170,76,0.6);
     opacity: 0;
     transition: all 250ms ease-out;
-    margin: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 .btn-show-hide4 {
@@ -617,7 +623,7 @@ p {
 
 .info {
     background-color: black;
-    height: 400px;
+    height: 800px;
 }
 
 .des {
@@ -628,6 +634,10 @@ p {
 .des {
     text-decoration: none;
     color: whitesmoke;
+}
+
+.flasher {
+em;
 }
 
 
