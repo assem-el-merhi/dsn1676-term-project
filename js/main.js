@@ -57,4 +57,3 @@ $flash.waypoint(function (direction){ // two equals signs = soft compare and thr
  
 console.log('Here');
 }, {offset: '60%', context: '.page'});
-
